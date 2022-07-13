@@ -14,4 +14,48 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Baumans', sans-serif;
+    padding: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(3rem, 10vw, 7rem);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #edf6f9;
+}
+.counter-container {
+    width: clamp(280px, 40%, 700px);
+    height: 200px;
+    background-color: #edf6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 35px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    width: clamp(50px, 5vw, 100px);
+    height: clamp(50px, 5vw, 100px);
+    margin: 0 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #C0E9FF;
+    transition: all .2s;
+    font-size: 2rem;
+}
+.button:first-child {
+    background-color: #FF7082;
+    color: #edf6f9;
+}
+.button:last-child {
+    background-color: #C0E9FF;
+    color: rgba(0, 0, 0, 0.7);
+}
+.button:hover {
+    transform: scale(1.1);
+}
+.button:active {
+    transform: scale(1);
 }
